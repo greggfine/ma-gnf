@@ -1,0 +1,28 @@
+components:
+    Fretboard
+    RandomNote (?)
+    Timer
+    Score
+    Round
+    Header (to hold Score and Round)
+    GameOverScreen
+    InstructionsScreen
+
+STATE:
+    randomNote
+    string(1-6)
+    fret(1-12)
+    wrongAnswer
+    rightAnswer
+    percentCorrect
+    numStringsSelected
+    allStringsSelected
+    currentTime
+    timeIsUp
+    notes (E0-E8?)
+    stringIsSelected
+
+CONSIDERATIONS:
+    open strings
+    enharmonics
+

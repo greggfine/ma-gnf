@@ -1,0 +1,12 @@
+note = {
+    id: number,
+    name: "C",
+    octave: 0,
+    isOpenString: false
+}
+
+fret = {
+    id: number,
+    number: 3,
+    string: "E"
+}

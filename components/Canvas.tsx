@@ -1,7 +1,10 @@
 import styles from "./canvas.module.scss";
 import { useEffect, useRef } from "react";
+type Props = {
+  numStringsSelected: number;
+};
 
-const Canvas = () => {
+const Canvas = ({ numStringsSelected }: Props) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {

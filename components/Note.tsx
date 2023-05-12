@@ -5,9 +5,16 @@ type Props = {
   string: number;
   handleClick(name: string, string: number, e: any): void;
   stringsClicked: boolean[];
+  numStringsSelected: number;
 };
 
-const Note = ({ name, string, handleClick, stringsClicked }: Props) => {
+const Note = ({
+  name,
+  string,
+  handleClick,
+  stringsClicked,
+  numStringsSelected,
+}: Props) => {
   return (
     <div
       className={styles.Note}

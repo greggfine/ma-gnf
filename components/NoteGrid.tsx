@@ -8,7 +8,11 @@ type Props = {
   stringsClicked: boolean[];
   numStringsSelected: number;
 };
-const NoteGrid = ({ handleClick, stringsClicked }: Props) => {
+const NoteGrid = ({
+  handleClick,
+  stringsClicked,
+  numStringsSelected,
+}: Props) => {
   const [notes] = useState(notesData);
   return (
     <h1 className={styles.NoteGrid}>
@@ -20,6 +24,7 @@ const NoteGrid = ({ handleClick, stringsClicked }: Props) => {
             string={string}
             handleClick={handleClick}
             stringsClicked={stringsClicked}
+            numStringsSelected={numStringsSelected}
           />
         );
       })}

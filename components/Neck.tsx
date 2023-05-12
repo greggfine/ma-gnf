@@ -10,7 +10,7 @@ type Props = {
 const Neck = ({ handleClick, numStringsSelected, stringsClicked }: Props) => {
   return (
     <div className={styles.Neck}>
-      <Canvas />
+      <Canvas numStringsSelected={numStringsSelected} />
       <NoteGrid
         handleClick={handleClick}
         stringsClicked={stringsClicked}

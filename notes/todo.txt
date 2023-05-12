@@ -1,0 +1,2 @@
+If all notes selected, generate next randNote
+    and increment round

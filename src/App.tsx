@@ -7,7 +7,7 @@ import Neck from "../components/Neck";
 import RandNote from "../components/RandNote";
 const notes = ["e", "f", "f#", "g", "g#", "a", "a#", "b", "c", "c#", "d", "d#"];
 function App() {
-  const [isRightAnswer, setIsRightAnswer] = useState(false);
+  const [round, setRound] = useState(1);
   const [roundScore, setRoundScore] = useState(0);
   const [numStringsSelected, setNumStringsSelected] = useState(0);
   const [randNote, setRandNote] = useState("");
@@ -44,10 +44,21 @@ function App() {
         return prevState;
       }
     });
+    console.log(numStringsSelected);
+
+    if (numStringsSelected === 5) {
+      initiateRound();
+    }
+  };
+  const initiateRound = () => {
+    setTimeout(() => {
+      generateRandNote();
+      setRound((prevState) => prevState + 1);
+    }, 2000);
   };
   return (
     <>
-      <Header roundScore={roundScore} />
+      <Header roundScore={roundScore} round={round} />
       <main>
         <Neck
           handleClick={handleClick}

@@ -4,17 +4,10 @@ type Props = {
   name: string;
   string: number;
   handleClick(name: string, string: number): void;
-  numStringsSelected: number;
   stringsClicked: boolean[];
 };
 
-const Note = ({
-  name,
-  string,
-  numStringsSelected,
-  handleClick,
-  stringsClicked,
-}: Props) => {
+const Note = ({ name, string, handleClick, stringsClicked }: Props) => {
   return (
     <div
       className={styles.Note}
@@ -23,9 +16,7 @@ const Note = ({
           handleClick(name, string);
         }
       }}
-    >
-      {name}
-    </div>
+    ></div>
   );
 };
 

@@ -1,38 +1,10 @@
-drawGrid fn
-    We take in numStrings, numFrets and generate a grid based on this.
-        Need to draw 6 horizontal lines.
-        Need to draw 12 vertical lines
+Reorder notes
+    Currently, notes on each line are read from json arr in that order.
 
-Really, we're drawing POINTS here.
-    The canvas lines are just "decoration".
-        Each point should create a div with w/h and border and can be 
+    Can we reverse the grid row?
 
-
-generateGrid fn
-    Each point on grid should have:
-        string: 6
-        pitch: g
-        fret: 3,
-        open: false
-            This should be arr of objects?
 
 
 Then, how can we take this grid and use it to draw lines and frets?
-    What we need is x and y coordinates
-        We also need to beginPath
 
 ======================================
-OR
-    we create the divs in html and give each a dataset property of
-        data-note: string/pitch/fret
-        data-open: false
-        
-
-
-[
- {
-    id:
-    name,etc.
- }
-
-]

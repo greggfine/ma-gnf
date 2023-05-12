@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Neck from "../components/Neck";
-const notes = ["e", "f", "f#", "g"];
+const notes = ["e", "f", "f#", "g", "g#", "a", "a#", "b", "c", "c#", "d", "d#"];
 function App() {
   const [isRightAnswer, setIsRightAnswer] = useState(false);
   const [roundScore, setRoundScore] = useState(0);

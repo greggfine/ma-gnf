@@ -3,7 +3,7 @@ note = {
     name: "C",
     octave: 0,
     isOpenString: false
-}
+}       
 
 fret = {
     id: number,

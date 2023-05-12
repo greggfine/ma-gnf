@@ -1,0 +1,626 @@
+[
+  {
+    "id": 0,
+    "name": "e",
+    "string": 0,
+    "fret": 0,
+    "octave": 2,
+    "isOpen": true
+  },
+  {
+    "id": 1,
+    "name": "f",
+    "string": 0,
+    "fret": 1,
+    "octave": 2,
+    "isOpen": false
+  },
+  {
+    "id": 2,
+    "name": "f#",
+    "string": 0,
+    "fret": 2,
+    "octave": 2,
+    "isOpen": false
+  },
+  {
+    "id": 3,
+    "name": "g",
+    "string": 0,
+    "fret": 3,
+    "octave": 2,
+    "isOpen": false
+  },
+  {
+    "id": 4,
+    "name": "g#",
+    "string": 0,
+    "fret": 4,
+    "octave": 2,
+    "isOpen": false
+  },
+  {
+    "id": 5,
+    "name": "a",
+    "string": 0,
+    "fret": 5,
+    "octave": 2,
+    "isOpen": false
+  },
+  {
+    "id": 6,
+    "name": "a#",
+    "string": 0,
+    "fret": 6,
+    "octave": 2,
+    "isOpen": false
+  },
+  {
+    "id": 7,
+    "name": "b",
+    "string": 0,
+    "fret": 7,
+    "octave": 2,
+    "isOpen": false
+  },
+  {
+    "id": 8,
+    "name": "c",
+    "string": 0,
+    "fret": 8,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 9,
+    "name": "c#",
+    "string": 0,
+    "fret": 9,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 10,
+    "name": "d",
+    "string": 0,
+    "fret": 10,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 11,
+    "name": "d#",
+    "string": 0,
+    "fret": 11,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 12,
+    "name": "e",
+    "string": 0,
+    "fret": 12,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 13,
+    "name": "a",
+    "string": 1,
+    "fret": 0,
+    "octave": 2,
+    "isOpen": true
+  },
+  {
+    "id": 14,
+    "name": "a#",
+    "string": 1,
+    "fret": 1,
+    "octave": 2,
+    "isOpen": false
+  },
+  {
+    "id": 15,
+    "name": "b",
+    "string": 1,
+    "fret": 2,
+    "octave": 2,
+    "isOpen": false
+  },
+  {
+    "id": 16,
+    "name": "c",
+    "string": 1,
+    "fret": 3,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 17,
+    "name": "c#",
+    "string": 1,
+    "fret": 4,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 18,
+    "name": "d",
+    "string": 1,
+    "fret": 5,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 19,
+    "name": "d#",
+    "string": 1,
+    "fret": 6,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 20,
+    "name": "e",
+    "string": 1,
+    "fret": 7,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 21,
+    "name": "f",
+    "string": 1,
+    "fret": 8,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 22,
+    "name": "f#",
+    "string": 1,
+    "fret": 9,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 23,
+    "name": "g",
+    "string": 1,
+    "fret": 10,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 24,
+    "name": "g#",
+    "string": 1,
+    "fret": 11,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 25,
+    "name": "a",
+    "string": 1,
+    "fret": 12,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 26,
+    "name": "d",
+    "string": 2,
+    "fret": 0,
+    "octave": 3,
+    "isOpen": true
+  },
+  {
+    "id": 27,
+    "name": "d#",
+    "string": 2,
+    "fret": 1,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 28,
+    "name": "e",
+    "string": 2,
+    "fret": 2,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 29,
+    "name": "f",
+    "string": 2,
+    "fret": 3,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 30,
+    "name": "f#",
+    "string": 2,
+    "fret": 4,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 31,
+    "name": "g",
+    "string": 2,
+    "fret": 5,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 32,
+    "name": "g#",
+    "string": 2,
+    "fret": 6,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 33,
+    "name": "a",
+    "string": 2,
+    "fret": 7,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 34,
+    "name": "a#",
+    "string": 2,
+    "fret": 8,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 35,
+    "name": "b",
+    "string": 2,
+    "fret": 9,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 36,
+    "name": "c",
+    "string": 2,
+    "fret": 10,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 37,
+    "name": "c#",
+    "string": 2,
+    "fret": 11,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 38,
+    "name": "d",
+    "string": 2,
+    "fret": 12,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 39,
+    "name": "g",
+    "string": 3,
+    "fret": 0,
+    "octave": 3,
+    "isOpen": true
+  },
+  {
+    "id": 40,
+    "name": "g#",
+    "string": 3,
+    "fret": 1,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 41,
+    "name": "a",
+    "string": 3,
+    "fret": 2,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 42,
+    "name": "a#",
+    "string": 3,
+    "fret": 3,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 43,
+    "name": "b",
+    "string": 3,
+    "fret": 4,
+    "octave": 3,
+    "isOpen": false
+  },
+  {
+    "id": 44,
+    "name": "c",
+    "string": 3,
+    "fret": 5,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 45,
+    "name": "c#",
+    "string": 3,
+    "fret": 6,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 46,
+    "name": "d",
+    "string": 3,
+    "fret": 7,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 47,
+    "name": "d#",
+    "string": 3,
+    "fret": 8,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 48,
+    "name": "e",
+    "string": 3,
+    "fret": 9,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 49,
+    "name": "f",
+    "string": 3,
+    "fret": 10,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 50,
+    "name": "f#",
+    "string": 3,
+    "fret": 11,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 51,
+    "name": "g",
+    "string": 3,
+    "fret": 12,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 52,
+    "name": "b",
+    "string": 4,
+    "fret": 0,
+    "octave": 4,
+    "isOpen": true
+  },
+  {
+    "id": 53,
+    "name": "c",
+    "string": 4,
+    "fret": 1,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 54,
+    "name": "c#",
+    "string": 4,
+    "fret": 2,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 55,
+    "name": "d",
+    "string": 4,
+    "fret": 3,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 56,
+    "name": "d#",
+    "string": 4,
+    "fret": 4,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 57,
+    "name": "e",
+    "string": 4,
+    "fret": 5,
+    "octave": 5,
+    "isOpen": false
+  },
+  {
+    "id": 58,
+    "name": "f",
+    "string": 4,
+    "fret": 6,
+    "octave": 5,
+    "isOpen": false
+  },
+  {
+    "id": 59,
+    "name": "f#",
+    "string": 4,
+    "fret": 7,
+    "octave": 5,
+    "isOpen": false
+  },
+  {
+    "id": 60,
+    "name": "g",
+    "string": 4,
+    "fret": 8,
+    "octave": 5,
+    "isOpen": false
+  },
+  {
+    "id": 61,
+    "name": "g#",
+    "string": 4,
+    "fret": 9,
+    "octave": 5,
+    "isOpen": false
+  },
+  {
+    "id": 62,
+    "name": "a",
+    "string": 4,
+    "fret": 10,
+    "octave": 5,
+    "isOpen": false
+  },
+  {
+    "id": 63,
+    "name": "a#",
+    "string": 4,
+    "fret": 11,
+    "octave": 5,
+    "isOpen": false
+  },
+  {
+    "id": 64,
+    "name": "b",
+    "string": 4,
+    "fret": 12,
+    "octave": 5,
+    "isOpen": false
+  },
+  {
+    "id": 65,
+    "name": "e",
+    "string": 5,
+    "fret": 0,
+    "octave": 4,
+    "isOpen": true
+  },
+  {
+    "id": 66,
+    "name": "f",
+    "string": 5,
+    "fret": 1,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 67,
+    "name": "f#",
+    "string": 5,
+    "fret": 2,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 68,
+    "name": "g",
+    "string": 5,
+    "fret": 3,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 69,
+    "name": "g#",
+    "string": 5,
+    "fret": 4,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 70,
+    "name": "a",
+    "string": 5,
+    "fret": 5,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 71,
+    "name": "a#",
+    "string": 5,
+    "fret": 6,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 72,
+    "name": "b",
+    "string": 5,
+    "fret": 7,
+    "octave": 4,
+    "isOpen": false
+  },
+  {
+    "id": 73,
+    "name": "c",
+    "string": 5,
+    "fret": 8,
+    "octave": 5,
+    "isOpen": false
+  },
+  {
+    "id": 74,
+    "name": "c#",
+    "string": 5,
+    "fret": 9,
+    "octave": 5,
+    "isOpen": false
+  },
+  {
+    "id": 75,
+    "name": "d",
+    "string": 5,
+    "fret": 10,
+    "octave": 5,
+    "isOpen": false
+  },
+  {
+    "id": 76,
+    "name": "d#",
+    "string": 5,
+    "fret": 11,
+    "octave": 5,
+    "isOpen": false
+  },
+  {
+    "id": 77,
+    "name": "e",
+    "string": 5,
+    "fret": 12,
+    "octave": 5,
+    "isOpen": false
+  }
+]

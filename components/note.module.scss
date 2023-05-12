@@ -1,0 +1,10 @@
+.Note {
+  // border: 1px solid #000;
+  width: 10px;
+  height: 10px;
+  background-color: hsl(0deg, 20%, 70%);
+  place-self: center;
+  &:hover {
+    cursor: pointer;
+  }
+}

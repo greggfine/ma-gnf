@@ -1,5 +1,3 @@
-git init and push
-
 drawGrid fn
     We take in numStrings, numFrets and generate a grid based on this.
         Need to draw 6 horizontal lines.
@@ -30,3 +28,11 @@ OR
         data-open: false
         
 
+
+[
+ {
+    id:
+    name,etc.
+ }
+
+]

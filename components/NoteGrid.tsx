@@ -1,7 +1,7 @@
 import styles from "./note-grid.module.scss";
 import Note from "./Note";
 import { useState } from "react";
-import notesData from "../public/data/notes.json";
+import notesData from "../src/data/notes.json";
 
 type Props = {
   handleClick(name: string, string: number): void;

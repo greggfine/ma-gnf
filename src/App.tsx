@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Neck from "../components/Neck";
+import RandNote from "../components/RandNote";
 const notes = ["e", "f", "f#", "g", "g#", "a", "a#", "b", "c", "c#", "d", "d#"];
 function App() {
   const [isRightAnswer, setIsRightAnswer] = useState(false);
@@ -46,26 +47,19 @@ function App() {
   };
   return (
     <>
-      <Header />
+      <Header roundScore={roundScore} />
       <main>
         <Neck
           handleClick={handleClick}
           stringsClicked={stringsClicked}
           numStringsSelected={numStringsSelected}
         />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        Random Note: {randNote}
-        <br />
-        Num Strings Selected: {numStringsSelected}
-        <br />
-        Strings Clicked: {JSON.stringify(stringsClicked)}
-        <br />
-        Round Score: {roundScore}
+        <div className="infoContainer">
+          <RandNote randNote={randNote} />
+          {/* Num Strings Selected: {numStringsSelected} */}
+          {/* Strings Clicked: {JSON.stringify(stringsClicked)} */}
+          {/* Round Score: {roundScore} */}
+        </div>
       </main>
       <Footer />
     </>

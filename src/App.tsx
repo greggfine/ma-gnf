@@ -21,13 +21,10 @@ function App() {
   useEffect(() => {
     generateRandNote();
   }, []);
-  const handleClick = (name: string, string: number) => {
+  const handleClick = (name: string, string: number, e: any) => {
     // prevent a clicked string from being clicked again
     setStringsClicked((prevState) => {
       return prevState.map((isStringClicked, idx) => {
-        console.log(prevState[idx]);
-        console.log(string);
-
         return idx === string ? true : prevState[idx];
       });
     });
@@ -36,7 +33,15 @@ function App() {
       return (prevState += 1);
     });
     setRoundScore((prevState) => {
-      return name == randNote ? (prevState += 1) : prevState;
+      if (name === randNote) {
+        e.target.textContent = name;
+        e.target.classList.add("selectedNote", "right");
+        return (prevState += 1);
+      } else {
+        e.target.textContent = name;
+        e.target.classList.add("selectedNote", "wrong");
+        return prevState;
+      }
     });
   };
   return (

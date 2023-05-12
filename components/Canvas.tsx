@@ -89,6 +89,9 @@ const Canvas = () => {
       c.moveTo(289, fretStartingPoint);
       c.lineTo(289, fretEndingPoint);
       c.stroke();
+      c.moveTo(293, fretStartingPoint);
+      c.lineTo(293, fretEndingPoint);
+      c.stroke();
 
       c.beginPath();
       c.arc(232, 75, 5, 0, 2 * Math.PI);

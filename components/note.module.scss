@@ -2,12 +2,12 @@
   // border: 1px solid #000;
   width: 25px;
   height: 25px;
-  // background-color: hsl(0deg, 20%, 70%);
   place-self: center;
   z-index: 1;
   transition: background-color 50ms;
   &:hover {
     cursor: pointer;
-    background-color: hsl(0deg, 100%, 20%);
+    background-color: hsl(0deg, 0%, 60%);
+    border: 1px solid #000;
   }
 }

@@ -3,7 +3,7 @@ import NoteGrid from "./NoteGrid";
 import Canvas from "./Canvas";
 
 type Props = {
-  handleClick(name: string, string: number): void;
+  handleClick(name: string, string: number, e: any): void;
   numStringsSelected: number;
   stringsClicked: boolean[];
 };

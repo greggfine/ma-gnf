@@ -4,7 +4,7 @@ import { useState } from "react";
 import notesData from "../src/data/notes.json";
 
 type Props = {
-  handleClick(name: string, string: number): void;
+  handleClick(name: string, string: number, e: any): void;
   stringsClicked: boolean[];
   numStringsSelected: number;
 };

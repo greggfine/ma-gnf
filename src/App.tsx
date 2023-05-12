@@ -41,13 +41,18 @@ function App() {
   };
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <main>
         <Neck
           handleClick={handleClick}
           stringsClicked={stringsClicked}
           numStringsSelected={numStringsSelected}
         />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <br />
         Random Note: {randNote}
         <br />
@@ -57,7 +62,7 @@ function App() {
         <br />
         Round Score: {roundScore}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

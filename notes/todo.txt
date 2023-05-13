@@ -1,2 +1,6 @@
-If all notes selected, generate next randNote
-    and increment round
+What I've done:
+
+Importing createContext from "react
+
+creating a Context and initializing to undefined
+    Also giving it a type/interface

@@ -1,24 +1,16 @@
 import styles from "./note.module.scss";
-import { FC, useEffect, useRef } from "react";
+import { FC, useRef, useContext } from "react";
 import * as Tone from "tone";
+import { Context } from "../src/App";
 
 type Props = {
   name: string;
   octave: number;
   string: number;
-  handleClick(name: string, string: number, e: any): void;
-  stringsClicked: boolean[];
-  numStringsSelected: number;
 };
 
-const Note: FC<Props> = ({
-  name,
-  octave,
-  string,
-  handleClick,
-  stringsClicked,
-  numStringsSelected,
-}) => {
+const Note: FC<Props> = ({ name, octave, string }) => {
+  const { stringsClicked, handleClick } = useContext(Context);
   const audioRef = useRef(null);
   const playNote = (name: string, octave: number) => {
     const synth = new Tone.Synth();

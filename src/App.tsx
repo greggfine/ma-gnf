@@ -1,18 +1,27 @@
 import "./App.scss";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, createContext } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Neck from "../components/Neck";
 import RandNote from "../components/RandNote";
 const notes = ["e", "f", "f#", "g", "g#", "a", "a#", "b", "c", "c#", "d", "d#"];
 
+interface ContextType {
+  stringsClicked: boolean[];
+  handleClick(name: string, string: number, e: any): void;
+}
+
+export const Context = createContext<ContextType>({
+  stringsClicked: [],
+  handleClick: () => {},
+});
 function App() {
   const [round, setRound] = useState(1);
   const [roundScore, setRoundScore] = useState(0);
   const [numStringsSelected, setNumStringsSelected] = useState(0);
   const [randNote, setRandNote] = useState("");
-  const [stringsClicked, setStringsClicked] = useState(
+  const [stringsClicked, setStringsClicked] = useState<boolean[]>(
     new Array(6).fill(false)
   );
 
@@ -60,11 +69,9 @@ function App() {
     <>
       <Header roundScore={roundScore} round={round} />
       <main>
-        <Neck
-          handleClick={handleClick}
-          stringsClicked={stringsClicked}
-          numStringsSelected={numStringsSelected}
-        />
+        <Context.Provider value={{ stringsClicked, handleClick }}>
+          <Neck />
+        </Context.Provider>
         <div className="infoContainer">
           <RandNote randNote={randNote} />
         </div>

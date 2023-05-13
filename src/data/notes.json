@@ -420,7 +420,7 @@
     "name": "b",
     "string": 4,
     "fret": 0,
-    "octave": 4,
+    "octave": 3,
     "isOpen": true
   },
   {
@@ -460,7 +460,7 @@
     "name": "e",
     "string": 4,
     "fret": 5,
-    "octave": 5,
+    "octave": 4,
     "isOpen": false
   },
   {
@@ -468,7 +468,7 @@
     "name": "f",
     "string": 4,
     "fret": 6,
-    "octave": 5,
+    "octave": 4,
     "isOpen": false
   },
   {
@@ -476,7 +476,7 @@
     "name": "f#",
     "string": 4,
     "fret": 7,
-    "octave": 5,
+    "octave": 4,
     "isOpen": false
   },
   {
@@ -484,7 +484,7 @@
     "name": "g",
     "string": 4,
     "fret": 8,
-    "octave": 5,
+    "octave": 4,
     "isOpen": false
   },
   {
@@ -492,7 +492,7 @@
     "name": "g#",
     "string": 4,
     "fret": 9,
-    "octave": 5,
+    "octave": 4,
     "isOpen": false
   },
   {
@@ -500,7 +500,7 @@
     "name": "a",
     "string": 4,
     "fret": 10,
-    "octave": 5,
+    "octave": 4,
     "isOpen": false
   },
   {
@@ -508,7 +508,7 @@
     "name": "a#",
     "string": 4,
     "fret": 11,
-    "octave": 5,
+    "octave": 4,
     "isOpen": false
   },
   {
@@ -516,7 +516,7 @@
     "name": "b",
     "string": 4,
     "fret": 12,
-    "octave": 5,
+    "octave": 4,
     "isOpen": false
   },
   {

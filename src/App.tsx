@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import Neck from "../components/Neck";
 import RandNote from "../components/RandNote";
 const notes = ["e", "f", "f#", "g", "g#", "a", "a#", "b", "c", "c#", "d", "d#"];
+
 function App() {
   const [round, setRound] = useState(1);
   const [roundScore, setRoundScore] = useState(0);
@@ -44,7 +45,6 @@ function App() {
         return prevState;
       }
     });
-    console.log(numStringsSelected);
 
     if (numStringsSelected === 5) {
       initiateRound();
@@ -67,9 +67,6 @@ function App() {
         />
         <div className="infoContainer">
           <RandNote randNote={randNote} />
-          {/* Num Strings Selected: {numStringsSelected} */}
-          {/* Strings Clicked: {JSON.stringify(stringsClicked)} */}
-          {/* Round Score: {roundScore} */}
         </div>
       </main>
       <Footer />

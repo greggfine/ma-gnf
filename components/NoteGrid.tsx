@@ -16,11 +16,12 @@ const NoteGrid = ({
   const [notes] = useState(notesData);
   return (
     <h1 className={styles.NoteGrid}>
-      {notes.map(({ id, name, string }) => {
+      {notes.map(({ id, name, string, octave }) => {
         return (
           <Note
             key={id}
             name={name}
+            octave={octave}
             string={string}
             handleClick={handleClick}
             stringsClicked={stringsClicked}

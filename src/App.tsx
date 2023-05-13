@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Neck from "../components/Neck";
 import RandNote from "../components/RandNote";
+import Timer from "../components/Timer";
 const notes = ["e", "f", "f#", "g", "g#", "a", "a#", "b", "c", "c#", "d", "d#"];
 
 interface ContextType {
@@ -16,7 +17,9 @@ export const Context = createContext<ContextType>({
   stringsClicked: [],
   handleClick: () => {},
 });
+
 function App() {
+  const roundTime = 10;
   const [round, setRound] = useState(1);
   const [roundScore, setRoundScore] = useState(0);
   const [numStringsSelected, setNumStringsSelected] = useState(0);
@@ -24,6 +27,7 @@ function App() {
   const [stringsClicked, setStringsClicked] = useState<boolean[]>(
     new Array(6).fill(false)
   );
+  const [timeRemaining, setTimeRemaining] = useState(roundTime);
 
   const generateRandNote = (): void => {
     const randomNote = notes[Math.floor(Math.random() * notes.length)];
@@ -32,6 +36,21 @@ function App() {
   useEffect(() => {
     generateRandNote();
   }, []);
+
+  useEffect(() => {
+    if (timeRemaining > 0) {
+      const timer = setTimeout(() => {
+        setTimeRemaining((prev) => {
+          return (prev = prev - 1);
+        });
+      }, 1000);
+      return () => {
+        clearTimeout(timer);
+      };
+    } else {
+      initiateRound();
+    }
+  }, [timeRemaining]);
   const handleClick = (name: string, string: number, e: any) => {
     // prevent a clicked string from being clicked again
     setStringsClicked((prevState) => {
@@ -61,6 +80,7 @@ function App() {
   };
   const initiateRound = () => {
     setTimeout(() => {
+      setTimeRemaining(roundTime);
       generateRandNote();
       setRound((prevState) => prevState + 1);
     }, 2000);
@@ -69,6 +89,7 @@ function App() {
     <>
       <Header roundScore={roundScore} round={round} />
       <main>
+        <Timer>{timeRemaining}</Timer>
         <Context.Provider value={{ stringsClicked, handleClick }}>
           <Neck />
         </Context.Provider>

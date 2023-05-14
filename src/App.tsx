@@ -33,9 +33,10 @@ function App() {
     const randomNote = notes[Math.floor(Math.random() * notes.length)];
     setRandNote(randomNote);
   };
+
   useEffect(() => {
     generateRandNote();
-  }, []);
+  }, [round]);
 
   useEffect(() => {
     if (timeRemaining > 0) {
@@ -81,7 +82,6 @@ function App() {
   const initiateRound = () => {
     setTimeout(() => {
       setTimeRemaining(roundTime);
-      generateRandNote();
       setRound((prevState) => prevState + 1);
     }, 2000);
   };
@@ -89,7 +89,7 @@ function App() {
     <>
       <Header roundScore={roundScore} round={round} />
       <main>
-        <Timer>{timeRemaining}</Timer>
+        <Timer timeRemaining={timeRemaining} />
         <Context.Provider value={{ stringsClicked, handleClick }}>
           <Neck />
         </Context.Provider>

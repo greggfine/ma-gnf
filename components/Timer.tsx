@@ -1,12 +1,16 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import styles from "./timer.module.scss";
 
 interface Props {
-  children: ReactNode;
+  timeRemaining: number;
 }
 
-const Timer: FC<Props> = ({ children }) => {
-  return <h1>Time Remaining: {children}</h1>;
+const Timer: FC<Props> = ({ timeRemaining }) => {
+  return (
+    <div className={styles.Timer}>
+      <progress max="10" value={timeRemaining}></progress>
+    </div>
+  );
 };
 
 export default Timer;

@@ -20,6 +20,7 @@ export const Context = createContext<ContextType>({
 
 function App() {
   const roundTime = 10;
+  const maxRounds = 3;
   const [round, setRound] = useState(1);
   const [roundScore, setRoundScore] = useState(0);
   const [numStringsSelected, setNumStringsSelected] = useState(0);
@@ -35,6 +36,12 @@ function App() {
   };
 
   useEffect(() => {
+    // Remove classes from target elements
+    const targetElements = document.querySelectorAll(".selectedNote");
+    targetElements.forEach((element) => {
+      element.textContent = "";
+      element.classList.remove("selectedNote", "right", "wrong");
+    });
     generateRandNote();
   }, [round]);
 
@@ -52,6 +59,7 @@ function App() {
       initiateRound();
     }
   }, [timeRemaining]);
+
   const handleClick = (name: string, string: number, e: any) => {
     // prevent a clicked string from being clicked again
     setStringsClicked((prevState) => {
@@ -63,6 +71,7 @@ function App() {
     setNumStringsSelected((prevState) => {
       return (prevState += 1);
     });
+
     setRoundScore((prevState) => {
       if (name === randNote) {
         e.target.textContent = name;
@@ -83,6 +92,7 @@ function App() {
     setTimeout(() => {
       setTimeRemaining(roundTime);
       setRound((prevState) => prevState + 1);
+      setStringsClicked(new Array(6).fill(false));
     }, 2000);
   };
   return (

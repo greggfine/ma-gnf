@@ -1,4 +1,5 @@
-import "./App.scss";
+// import "./App.scss";
+import styles from "./app.module.scss";
 
 import { useState, useEffect, createContext } from "react";
 import Footer from "../components/Footer";
@@ -100,6 +101,7 @@ function App() {
   return (
     <>
       <Header roundScore={roundScore} round={round} />
+      <h1 className={styles.header}>Guitar Note Finder</h1>
       <main>
         <Timer timeRemaining={timeRemaining} />
         <Context.Provider value={{ stringsClicked, handleClick }}>
@@ -109,7 +111,7 @@ function App() {
           <RandNote randNote={randNote} />
         </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

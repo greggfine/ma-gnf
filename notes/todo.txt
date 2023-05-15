@@ -1,6 +1,1 @@
-What I've done:
-
-Importing createContext from "react
-
-creating a Context and initializing to undefined
-    Also giving it a type/interface
+Instead of rtl, we want to go from ltr

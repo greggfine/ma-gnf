@@ -19,7 +19,7 @@ export const Context = createContext<ContextType>({
 });
 
 function App() {
-  const roundTime = 10;
+  const startTime = 0;
   const maxRounds = 3;
   const [round, setRound] = useState(1);
   const [roundScore, setRoundScore] = useState(0);
@@ -28,7 +28,7 @@ function App() {
   const [stringsClicked, setStringsClicked] = useState<boolean[]>(
     new Array(6).fill(false)
   );
-  const [timeRemaining, setTimeRemaining] = useState(roundTime);
+  const [timeRemaining, setTimeRemaining] = useState(startTime);
 
   const generateRandNote = (): void => {
     const randomNote = notes[Math.floor(Math.random() * notes.length)];
@@ -46,10 +46,12 @@ function App() {
   }, [round]);
 
   useEffect(() => {
-    if (timeRemaining > 0) {
+    // if (timeRemaining > 0) {
+    if (timeRemaining < 10) {
       const timer = setTimeout(() => {
         setTimeRemaining((prev) => {
-          return (prev = prev - 1);
+          return (prev = prev + 1);
+          // return (prev = prev - 1);
         });
       }, 1000);
       return () => {
@@ -90,7 +92,7 @@ function App() {
   };
   const initiateRound = () => {
     setTimeout(() => {
-      setTimeRemaining(roundTime);
+      setTimeRemaining(startTime);
       setRound((prevState) => prevState + 1);
       setStringsClicked(new Array(6).fill(false));
     }, 2000);
